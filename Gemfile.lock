@@ -1,0 +1,26 @@
+GEM
+  remote: https://rubygems.org/
+  specs:
+    httparty (0.16.2)
+      multi_xml (>= 0.5.2)
+    marky_markov (0.3.5)
+      msgpack
+    mini_portile2 (2.3.0)
+    msgpack (1.2.4)
+    multi_xml (0.6.0)
+    nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    nokogiri-styles (0.1.2)
+      nokogiri
+
+PLATFORMS
+  ruby
+
+DEPENDENCIES
+  httparty!
+  marky_markov!
+  nokogiri!
+  nokogiri-styles!
+
+BUNDLED WITH
+   1.16.2
