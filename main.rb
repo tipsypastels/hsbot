@@ -8,6 +8,7 @@ if ARGV.include?('scrape')
   require './chars'
   require './log_saver'
   require './homestuck'
+  require './message'
 
   Scraper.start!
 end

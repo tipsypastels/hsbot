@@ -7,14 +7,18 @@ GEM
       msgpack
     mini_portile2 (2.3.0)
     msgpack (1.2.4)
+    msgpack (1.2.4-x64-mingw32)
     multi_xml (0.6.0)
     nokogiri (1.8.4)
+      mini_portile2 (~> 2.3.0)
+    nokogiri (1.8.4-x64-mingw32)
       mini_portile2 (~> 2.3.0)
     nokogiri-styles (0.1.2)
       nokogiri
 
 PLATFORMS
   ruby
+  x64-mingw32
 
 DEPENDENCIES
   httparty!
@@ -23,4 +27,4 @@ DEPENDENCIES
   nokogiri-styles!
 
 BUNDLED WITH
-   1.16.2
+   1.16.5

@@ -5,7 +5,9 @@ class LogSaver
 
   def save!
     @logs.each do |log|
-      save_log(log)
+      unless log.content.start_with?('[') # skip pestering notifs
+        save_log(log)
+      end
     end
   end
 
@@ -13,11 +15,8 @@ class LogSaver
 
   def save_log(log)
     if (msg = Message.from(log))
-      puts "Saving log from \"#{char}\" in file: \"#{filename}\"."
-      Homestuck.save!(filename, text)
+      Homestuck.save!(msg)
     else
-      puts "Skipping log from \"#{char}\". Add them to the chars hash to save."
-      Message.not_saving(msg)
     end
   end
 end
